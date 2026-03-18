@@ -45,27 +45,24 @@ with st.sidebar:
     st.caption("Satellite Image Land Use Classification")
     st.divider()
 
-    # ── API Status Indicator ───────────────────────────────────────────
-    # We ping the FastAPI /health endpoint every time the page loads.
-    # This gives the user real-time feedback on whether the backend is
-    # running and the model is loaded. The try/except handles the case
-    # where the FastAPI server hasn't been started yet.
-    import requests
-    try:
-        r = requests.get("http://localhost:8000/health", timeout=2)
-        if r.status_code == 200:
-            data = r.json()
-            if data.get("model_loaded"):
-                st.success("🟢 API Online · Model Ready")   # All good
+    # ── Model / API Status Indicator ───────────────────────────────────
+    # Check if model file exists locally (works on Streamlit Cloud).
+    # Also try the FastAPI backend as a fallback (for local dev).
+    from pathlib import Path as _P
+    model_exists = (_P(__file__).resolve().parent.parent / "saved_models" / "model.pt").exists()
+
+    if model_exists:
+        st.success("🟢 Model Ready (local inference)")
+    else:
+        import requests
+        try:
+            r = requests.get("http://localhost:8000/health", timeout=2)
+            if r.status_code == 200 and r.json().get("model_loaded"):
+                st.success("🟢 API Online · Model Ready")
             else:
-                st.warning("🟡 API Online · No Model")      # API up, but no model.pt
-        else:
-            st.error("🔴 API Error")
-    except requests.exceptions.ConnectionError:
-        # FastAPI server is not running
-        st.error("🔴 API Offline — Start FastAPI first")
-    except Exception:
-        st.error("🔴 API Connection Error")
+                st.warning("🟡 API Online · No Model")
+        except Exception:
+            st.error("🔴 No model found")
 
     st.divider()
     st.markdown(

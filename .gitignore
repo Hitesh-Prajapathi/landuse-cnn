@@ -25,9 +25,6 @@ env/
 # Data (large — do not commit; download separately)
 data/
 
-# Trained model weights (large — share via Google Drive / HuggingFace Hub)
-saved_models/
-
 # macOS system files
 .DS_Store
 .AppleDouble
