@@ -22,8 +22,8 @@ env/
 .ipynb_checkpoints/
 *.ipynb
 
-# Data (large — do not commit; download separately)
-data/
+# Raw dataset (133MB — too large for git)
+data/raw/
 
 # macOS system files
 .DS_Store
