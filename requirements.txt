@@ -1,0 +1,37 @@
+# Core Deep Learning
+torch
+torchvision
+torchaudio
+
+# Data Handling
+numpy
+pandas
+Pillow
+
+# Visualization
+matplotlib
+seaborn
+
+# ML Utilities
+scikit-learn
+
+# Progress Bars
+tqdm
+
+# UI
+streamlit
+plotly
+
+# API (optional but good to have)
+fastapi
+uvicorn
+python-multipart
+
+# Kaggle Download
+kagglehub
+
+# Image Processing
+opencv-python
+
+# Optional (nice for debugging)
+jupyter

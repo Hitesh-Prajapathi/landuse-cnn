@@ -1,0 +1,33 @@
+Test Accuracy: 91.00%
+
+Cohen's Kappa: 0.9000
+Jaccard Index (macro avg): 0.8397
+
+Jaccard Index per class:
+  AnnualCrop               0.8505
+  Forest                   0.9709
+  HerbaceousVegetation     0.6514
+  Highway                  0.7642
+  Industrial               0.9109
+  Pasture                  0.9510
+  PermanentCrop            0.7273
+  Residential              0.8696
+  River                    0.7315
+  SeaLake                  0.9703
+
+                      precision    recall  f1-score   support
+
+          AnnualCrop     0.9286    0.9100    0.9192       100
+              Forest     0.9709    1.0000    0.9852       100
+HerbaceousVegetation     0.8875    0.7100    0.7889       100
+             Highway     0.8034    0.9400    0.8664       100
+          Industrial     0.9892    0.9200    0.9534       100
+             Pasture     0.9798    0.9700    0.9749       100
+       PermanentCrop     0.8073    0.8800    0.8421       100
+         Residential     0.8696    1.0000    0.9302       100
+               River     0.9080    0.7900    0.8449       100
+             SeaLake     0.9899    0.9800    0.9849       100
+
+            accuracy                         0.9100      1000
+           macro avg     0.9134    0.9100    0.9090      1000
+        weighted avg     0.9134    0.9100    0.9090      1000

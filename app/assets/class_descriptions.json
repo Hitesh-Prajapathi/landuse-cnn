@@ -1,0 +1,52 @@
+{
+  "AnnualCrop": {
+    "description": "Agricultural land dedicated to crops that are planted and harvested within a single growing season, such as wheat, corn, or rice.",
+    "icon": "🌾",
+    "color": "#DAA520"
+  },
+  "Forest": {
+    "description": "Dense woodland areas with significant tree canopy coverage, playing a crucial role in carbon sequestration and biodiversity.",
+    "icon": "🌲",
+    "color": "#228B22"
+  },
+  "HerbaceousVegetation": {
+    "description": "Areas covered with non-woody plants such as grasses, herbs, and ferns. Common in meadows and natural grasslands.",
+    "icon": "🌿",
+    "color": "#7CFC00"
+  },
+  "Highway": {
+    "description": "Major road infrastructure including highways, motorways, and large transportation corridors connecting urban areas.",
+    "icon": "🛣️",
+    "color": "#708090"
+  },
+  "Industrial": {
+    "description": "Zones designated for industrial activity including factories, warehouses, commercial facilities, and logistics centers.",
+    "icon": "🏭",
+    "color": "#B22222"
+  },
+  "Pasture": {
+    "description": "Grasslands used for grazing livestock such as cattle and sheep. Managed agricultural land with maintained grass cover.",
+    "icon": "🐄",
+    "color": "#90EE90"
+  },
+  "PermanentCrop": {
+    "description": "Land with long-term crops that don't need replanting annually — including vineyards, orchards, olive groves, and fruit plantations.",
+    "icon": "🍇",
+    "color": "#8B4513"
+  },
+  "Residential": {
+    "description": "Urban and suburban areas with housing, apartment buildings, and associated community infrastructure.",
+    "icon": "🏘️",
+    "color": "#FF6347"
+  },
+  "River": {
+    "description": "Natural waterways and river systems including banks and surrounding riparian zones essential for freshwater ecosystems.",
+    "icon": "🏞️",
+    "color": "#4169E1"
+  },
+  "SeaLake": {
+    "description": "Large bodies of water including seas, lakes, and reservoirs. Important for water supply, fisheries, and ecosystem balance.",
+    "icon": "🌊",
+    "color": "#1E90FF"
+  }
+}
