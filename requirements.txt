@@ -1,7 +1,6 @@
 # Core Deep Learning
 torch
 torchvision
-torchaudio
 
 # Data Handling
 numpy
@@ -19,19 +18,13 @@ scikit-learn
 tqdm
 
 # UI
-streamlit
+streamlit>=1.32.0
 plotly
 
-# API (optional but good to have)
+# API
 fastapi
 uvicorn
 python-multipart
 
-# Kaggle Download
-kagglehub
-
 # Image Processing
 opencv-python
-
-# Optional (nice for debugging)
-jupyter
